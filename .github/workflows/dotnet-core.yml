@@ -20,6 +20,6 @@ jobs:
     - name: Install dependencies
       run: dotnet restore ./Escolar/Escolar.Web/Escolar.Web.sln 
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build ./Escolar/Escolar.Web/Escolar.Web.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet fixie --no-restore --verbosity normal
+      run: dotnet ./Escolar/Escolar.Web/Escolar.Tests/Escolar.Tests.csproj fixie --no-restore --verbosity normal

@@ -18,11 +18,8 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      working-directory: DemoUnitTesting\Escolar\Escolar.Web
       run: dotnet restore 
     - name: Build
-      working-directory: DemoUnitTesting\Escolar\Escolar.Web
       run: dotnet build --configuration Release --no-restore
     - name: Test
-      working-directory: DemoUnitTesting\Escolar\Escolar.Web\Escolar.Tests
       run: dotnet fixie --no-restore --verbosity normal

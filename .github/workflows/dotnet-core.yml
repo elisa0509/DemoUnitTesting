@@ -21,8 +21,8 @@ jobs:
       working-directory: DemoUnitTesting\Escolar\Escolar.Web
       run: dotnet restore 
     - name: Build
-      working-directory: \Escolar\Escolar.Web
+      working-directory: DemoUnitTesting\Escolar\Escolar.Web
       run: dotnet build --configuration Release --no-restore
     - name: Test
-      working-directory: \Escolar\Escolar.Web\Escolar.Tests
+      working-directory: DemoUnitTesting\Escolar\Escolar.Web\Escolar.Tests
       run: dotnet fixie --no-restore --verbosity normal

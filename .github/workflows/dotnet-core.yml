@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      working-directory: \Escolar\Escolar.Web
+      working-directory: DemoUnitTesting\Escolar\Escolar.Web
       run: dotnet restore 
     - name: Build
       working-directory: \Escolar\Escolar.Web

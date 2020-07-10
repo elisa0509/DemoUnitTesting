@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Escolar.Web", "Escolar.Web\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Escolar.Tests", "Escolar.Tests\Escolar.Tests.csproj", "{A9BFD36D-1BBC-4B47-84D9-EDF587DBF3E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Escolar.TestsDemo", "Escolar.TestsDemo\Escolar.TestsDemo.csproj", "{096C5620-977A-4ECB-ACA0-082601960D9F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{A9BFD36D-1BBC-4B47-84D9-EDF587DBF3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9BFD36D-1BBC-4B47-84D9-EDF587DBF3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9BFD36D-1BBC-4B47-84D9-EDF587DBF3E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{096C5620-977A-4ECB-ACA0-082601960D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{096C5620-977A-4ECB-ACA0-082601960D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{096C5620-977A-4ECB-ACA0-082601960D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{096C5620-977A-4ECB-ACA0-082601960D9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

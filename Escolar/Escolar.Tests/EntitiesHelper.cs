@@ -51,5 +51,22 @@ namespace Escolar.Tests
 
             return resultado;
         }
+
+        public static Calificacion CalificacionBase100(bool resultadoNulo = false)
+        {
+            var resultado = new Calificacion
+            {
+                Alumno = CrearAlumno(),
+                Materia = CrearMateria(),
+                Periodo = CrearPeriodo()
+            };
+
+            if (!resultadoNulo)
+            {
+                resultado.Resultado = Random.Next(0, 100);
+            }
+
+            return resultado;
+        }
     }
 }

@@ -1,11 +1,12 @@
 ﻿using Escolar.Web.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace Escolar.Web.Features.Calificaciones
 {
     public static class CalculoCalificaciones
     {
-        public static Calificacion ObtenerPromedio(Alumno alumno, Materia materia, Periodo periodo, List<Calificacion> calificaciones )
+        public static Calificacion ObtenerPromedio(Alumno alumno, Materia materia, Periodo periodo, List<Calificacion> calificaciones, int redondeoDecimales )
         {
             //regla de negocio: ignorar resultados nulos al hacer el promedio
             var contador = 0;
@@ -23,7 +24,7 @@ namespace Escolar.Web.Features.Calificaciones
             decimal? resultado = null;
             if( contador > 0 )
             {
-                resultado = suma / contador;
+                resultado = Math.Round(suma / contador, redondeoDecimales);
             }
 
             return new Calificacion {
